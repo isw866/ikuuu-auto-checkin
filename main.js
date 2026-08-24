@@ -74,7 +74,7 @@ async function main() {
     const icon = isSuccess ? "✅" : "❌";
     const message = isSuccess ? result.value : result.reason.message;
 
-    const line = `${accountName}: ${icon} ${message}`;
+    const line = `${icon} ${message}`;
 
     isSuccess ? console.log(line) : console.error(line);
 
